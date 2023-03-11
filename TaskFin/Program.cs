@@ -5,7 +5,7 @@ string[] arr3 = { "Lesson", "Field", "Tree" };
 
 int maxLength = 3;
 
-string[] GetShortWordsArray(string[] array)
+string[] ShortWordArray(string[] array)
 {
     string[] result = new string[array.Length];
     int count = 0;
@@ -51,7 +51,7 @@ void PrintTask(string[] array)
 {
     Console.WriteLine("Заданный массив:");
     PrintArray(array);
-    string[] shortArray = GetShortWordsArray(array);
+    string[] shortArray = ShortWordArray(array);
     Console.WriteLine($"Массив с длинной элементов менее или равной {maxLength} символам:");
     PrintArray(shortArray);
     Console.WriteLine();
